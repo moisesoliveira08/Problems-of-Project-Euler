@@ -9,8 +9,8 @@ int main()
 	
 	int soma = 0;
 	for (i=2; i<numero; i++){
-		if(i % 3 == 0 || i % 5 == 0){
-			soma = soma + i;
+		if(i % 3 == 0 || i % 5 == 0){ // divisivel por 3 ou 5
+			soma = soma + i; // iteração para cada numero divisivel por 3 ou por 5
 		}
 	}
 	
