@@ -15,8 +15,8 @@ int main (){
 	int i = 1;
 	while (Fibonnaci[i] <= 4000000){
 		i = i + 1;
-		Fibonnaci.push_back( Fibonnaci[i-1] + Fibonnaci[i-2]);
-		if (Fibonnaci[i] % 2 == 0)
+		Fibonnaci.push_back( Fibonnaci[i-1] + Fibonnaci[i-2]); // acrescenta os termos da sequência de fibonnaci
+		if (Fibonnaci[i] % 2 == 0) // termos da sequencia que são múltiplos de 2
 			soma = soma + Fibonnaci[i];
 
 	}
