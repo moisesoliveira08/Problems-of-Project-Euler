@@ -5,9 +5,9 @@ int main()
     int i, counter, aux, keep;
     i = 2;
     aux = 2;
-    while (i <=20){
+    while (i <=20){             // o número maximo de divisores não pode passar de 20
             if (aux % i == 0){
-                keep = aux;
+                keep = aux; 
                 counter ++;
                 i = i + 1;
             }
