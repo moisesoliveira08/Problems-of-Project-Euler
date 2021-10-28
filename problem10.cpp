@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool is_prime(long int num){
+bool is_prime(long int num){ // função para verificar se um número é primo
     int i;
     bool isprime = true;
     if (num == 1)
@@ -31,7 +31,7 @@ int main(){
     
     for(i = 2; i<=n; i++){
         if(is_prime(i))
-            sum += i;
+            sum += i; // soma sempre o número primo seguinte
     }
     
     cout<<"a soma eh: "<<sum;
