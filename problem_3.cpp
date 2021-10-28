@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool is_prime(long int num){
+bool is_prime(long int num){ // função para verificar se um número é primo
     int i;
     bool isprime = true;
     if (num == 1)
@@ -25,7 +25,7 @@ bool is_prime(long int num){
 
 int main (){
 	
-    vector < long int > Prime_factors;
+    vector < long int > Prime_factors; // vector dos fatores primos do numero
     
     long int numero = 600851475143 ;
     
@@ -35,16 +35,16 @@ int main (){
            Prime_factors.push_back(numero);
            numero = 1;
         }
-        else if (is_prime(i) and numero % i == 0){
+        else if (is_prime(i) and numero % i == 0){ // faz a fatoração do número
             numero = numero/i;
-            Prime_factors.push_back(i);
+            Prime_factors.push_back(i); // acrescenta o valor do número primo no vector a cada iteração
         }
         else
             i = i + 1;
     }
-     int y = Prime_factors.size();
+     int y = Prime_factors.size(); // retorna o tamanho do vetor
     
-    cout<<"the largest prime factor is "<<Prime_factors[y-1];
+    cout<<"the largest prime factor is "<<Prime_factors[y-1]; // retorna o ultimo elemento do vetor, que, nesse caso, também é o maior elemento
     
     return 0;
 }
