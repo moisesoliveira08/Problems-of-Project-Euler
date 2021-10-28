@@ -6,7 +6,7 @@
 
 using namespace std;
 
-bool is_prime(long int num){
+bool is_prime(long int num){ // função para verificar se um número é primo
     int i;
     bool isprime = true;
     if (num == 1)
@@ -31,10 +31,10 @@ int main(){
     vector < long int > Primes;
     n = 0;
     int i = 2;
-    while(n < 10001){
+    while(n < 10001){ 
         if(is_prime(i)){
             n = n + 1;
-            Primes.push_back(i);
+            Primes.push_back(i); 
         }
     
         i += 1;
