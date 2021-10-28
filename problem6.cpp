@@ -6,10 +6,10 @@ int main(){
     int sum_of_the_squares = 0;
     int sum, i, square_of_the_sum, difference;
     for (i=1;i<=n;i++){
-        sum_of_the_squares = sum_of_the_squares + i*i;
+        sum_of_the_squares = sum_of_the_squares + i*i; // iteração para calcular a soma dos quadrados
     }
     
-    sum = (1+n)*n/2;
+    sum = (1+n)*n/2; // soma dos termos da PA
     
     square_of_the_sum = sum*sum;
     
