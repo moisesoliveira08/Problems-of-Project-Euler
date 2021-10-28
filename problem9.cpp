@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
     int a,b,c,l1,l2,l3;
-    for (c = 997;c>=335;c--){
+    for (c = 997;c>=335;c--){ // c não ultrapassa 335
         for(a = 1;a<=335;a++){
             b = 1000 - a - c;
                     if(c*c == a*a + b*b){
